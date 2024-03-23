@@ -1,0 +1,103 @@
+/* styling for the website */
+
+/* style.css */
+
+body {
+    font-family: 'Rethink Sans', sans-serif; /* Replaced Roboto with Rethink Sans */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Insert the new class for body text */
+.rethink-sans-<uniquifier> {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, .header, .navigation a { /* Titles and headings */
+    font-family: 'Victor Mono', monospace; /* Replaced Montserrat with Victor Mono */
+}
+
+/* Insert the new class for Victor Mono */
+.victor-mono-<uniquifier> {
+    font-family: "Victor Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, .content { /* Paragraph text */
+    font-family: 'Rethink Sans', sans-serif; /* Replaced Roboto with Rethink Sans */
+}
+
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navigation a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+    margin: 4px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery div {
+    flex-basis: 20%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 600px) {
+    .gallery div {
+        flex-basis: 100%;
+    }
+}
