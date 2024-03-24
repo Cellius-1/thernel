@@ -1,0 +1,1 @@
+A website to display some of my computer science projects, and give viewers a general taste of my resume. My competitions, passions, and interests, along with contact information, will be highlighted within.
