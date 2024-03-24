@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portfolio</title>
+    <title>Theren - A Student Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital@0;1&family=Victor+Mono&display=swap" rel="stylesheet">
@@ -16,80 +16,20 @@
 </div>
 
 <div class="navigation">
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#competitions">Competitions</a>
-    <a href="#interests">Interests</a>
-    <a href="#contact">Contact</a>
-</div>
-    
-<div class="content" id="home">
-    <h2>Welcome!</h2>
-    <p id="greetingMessage"></p>
-    <script>
-        // JavaScript for changing greeting based on time of day
-        var greetingElement = document.getElementById("greetingMessage");
-        var currentTime = new Date().getHours();
-        var greetingMessage = "";
-
-        if (currentTime >= 0 && currentTime <= 12) {
-            greetingMessage = "Good morning, and welcome to my small portfolio. On this website, I display some of my projects, interests, and achievements, to give a general gist of what I do. My main passion is computer science, inserting it into almost every aspect of my life. In fact, this description is designed to change the 'good morning' message based on the time of day! Further contact information can also be found here. Thanks for visiting!";
-        } else if (currentTime >= 12 && currentTime <= 18) {
-            greetingMessage = "Good afternoon, and welcome to my small portfolio. On this website, I display some of my projects, interests, and achievements, to give a general gist of what I do. My main passion is computer science, inserting it into almost every aspect of my life. In fact, this description is designed to change the 'good afternoon' message based on the time of day! Further contact information can also be found here. Thanks for visiting!";
-        } else if (currentTime >= 18 && currentTime <= 24) {
-            greetingMessage = "Good evening, and welcome to my small portfolio. On this website, I display some of my projects, interests, and achievements, to give a general gist of what I do. My main passion is computer science, inserting it into almost every aspect of my life. In fact, this description is designed to change the 'good evening' message based on the time of day! Further contact information can also be found here. Thanks for visiting!";
-        } else {
-            greetingMessage = "Hi! Welcome to my small portfolio. On this website, I display some of my projects, interests, and achievements, to give a general gist of what I do. My main passion is computer science, inserting it into almost every aspect of my life. In fact, this description would normally display a good morning/evening message using JavaScript based on the time of day, though it doesn't seem to be working as of now. 😅 Further contact information can be found in the contact section! Thanks for visiting :D";
-        }
-
-        greetingElement.textContent = greetingMessage;
-    </script>
-</div>
-
-
-<div class="content" id="about">
-    <h2>About Me</h2>
-    <p>I am a high school student passionate about technology and computer science. I love to learn new things and apply my knowledge to solve problems.</p>
-</div>
-
-<div class="content" id="projects">
-    <h2>Projects</h2>
-    <div class="gallery">
-        <div><img src="project1.jpg" alt="Project 1"><p>Project 1 Description</p></div>
-        <div><img src="project2.jpg" alt="Project 2"><p>Project 2 Description</p></div>
-        <div><img src="project3.jpg" alt="Project 3"><p>Project 3 Description</p></div>
-    </div>
-</div>
-
-<div class="content" id="competitions">
-    <h2>Competitions</h2>
-    <p>Throughout my school journey, I've participated in various academic and extracurricular competitions. Here are a few:</p>
-    <ul>
-        <li>Science Bowl</li>
-        <li>More</li>
-        <li>Robotics Competition</li>
-    </ul>
-</div>
-
-<div class="content" id="interests">
-    <h2>Interests</h2>
-    <p>Besides my academic pursuits, I have a keen interest in:</p>
-    <ul>
-        <li>Graphic Design</li>
-        <li>Photography</li>
-        <li>Playing the Drums</li>
-    </ul>
-</div>
-
-<div class="content" id="contact">
-    <h2>Contact</h2>
-    <p>If you're interested in working with me or have any questions, feel free to reach out.</p>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="competitions.html">Competitions</a>
+    <a href="interests.html">Interests</a>
+    <a href="contact.html">Contact</a>
 </div>
 
 <div class="footer">
     <p>© 2024 by Tharun Nagleswaran. Created with HTML, JavaScript & CSS.</p>
 </div>
+
+</body>
+</html>
 
 </body>
 </html>
