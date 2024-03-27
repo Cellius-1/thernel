@@ -33,9 +33,10 @@ p, .content {
 
 /*  header background for the homepage */
 .home-page .header {
-    background-image: url('cellius-1.github.io/thernel.github.io/images/pi.png');
+    background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
     background-size: cover;
     background-position: center;
+    position: relative; 
 }
 
 .home-page .header::before {
@@ -46,7 +47,13 @@ p, .content {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5); 
-    z-index: -1; 
+    z-index: 0; 
+}
+
+
+.header h1 {
+    position: relative;
+    z-index: 1;
 }
 
 
