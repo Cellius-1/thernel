@@ -31,28 +31,24 @@ p, .content {
 }
 
 
-.header {
-    position: relative;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    /* Add your background image here */
-    background-image: url('path/to/your/image.jpg');
+/*  header background for the homepage */
+.home-page .header {
+    background-image: url('cellius-1.github.io/thernel.github.io/images/pi.png');
     background-size: cover;
     background-position: center;
 }
 
-.header::before {
+.home-page .header::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
+
 
 
 .navigation {
