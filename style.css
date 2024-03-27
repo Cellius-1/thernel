@@ -1,7 +1,4 @@
 /* styling for the website */
-
-/* style.css */
-
 body {
     font-family: 'Rethink Sans', sans-serif; 
     margin: 0;
@@ -9,7 +6,7 @@ body {
     background: #f4f4f4;
 }
 
-/* Insert the new class for body text */
+
 .rethink-sans-<uniquifier> {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
@@ -17,11 +14,11 @@ body {
     font-style: normal;
 }
 
-h1, h2, h3, .header, .navigation a { /* Titles and headings */
+h1, h2, h3, .header, .navigation a { /* Titles + headings */
     font-family: 'Dela Gothic One', display; 
 }
 
-/* Insert the new class for Victor Mono */
+
 .victor-mono-<uniquifier> {
     font-family: "Dela Gothic One", display;
     font-optical-sizing: auto;
@@ -29,17 +26,34 @@ h1, h2, h3, .header, .navigation a { /* Titles and headings */
     font-style: normal;
 }
 
-p, .content { /* Paragraph text */
+p, .content { 
     font-family: 'Rethink Sans', sans-serif; 
 }
 
 
 .header {
+    position: relative;
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
+    /* Add your background image here */
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
 
 .navigation {
     overflow: hidden;
