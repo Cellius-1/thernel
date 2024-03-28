@@ -73,7 +73,7 @@ p, .content {
     content: '';
     position: absolute;
     width: 0;
-    height: -5px; 
+    height: 1px; 
     bottom: 0;
     left: 50%;
     background-color: white; 
