@@ -43,14 +43,15 @@ p, .content {
 
 /* Header text styling */
 .header h1 {
-    font-size: 3em; /* Adjust as necessary */
+    font-size: 3em; 
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    position: relative; /* Ensure the text is positioned over the overlay */
+    position: relative; 
     z-index: 1; 
 }
 
 
+/* Navigation styling */
 /* Navigation styling */
 .navigation {
     overflow: hidden;
@@ -64,12 +65,29 @@ p, .content {
     padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
+    position: relative;
+    overflow: hidden; 
 }
 
-.navigation a:hover {
-    background-color: #ddd;
-    color: black;
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    bottom: 0;
+    left: 50%;
+    background-color: white; 
+    transition: all 0.3s ease; 
+    transform: translateX(-50%);
 }
+
+.navigation a:hover::after {
+    width: 100%; 
+    left: 0; 
+    transform: translateX(0%); 
+}
+
 
 /* Content styling */
 .content {
