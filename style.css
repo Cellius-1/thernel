@@ -6,7 +6,6 @@ body {
     background: #f4f4f4;
 }
 
-
 .rethink-sans-<uniquifier> {
     font-family: "Rethink Sans", sans-serif;
     font-optical-sizing: auto;
@@ -17,7 +16,6 @@ body {
 h1, h2, h3, .header, .navigation a { /* Titles + headings */
     font-family: 'Dela Gothic One', display; 
 }
-
 
 .victor-mono-<uniquifier> {
     font-family: "Dela Gothic One", display;
@@ -30,16 +28,13 @@ p, .content {
     font-family: 'Rethink Sans', sans-serif; 
 }
 
-
 /*  header background for the homepage */
 .home-page .header {
     background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     position: relative; 
     height: 70vh;
-    overflow: hidden;
-    
 }
 
 .home-page .header::before {
@@ -53,16 +48,12 @@ p, .content {
     z-index: 0; 
 }
 
-
 .header h1 {
     position: relative;
     z-index: 1;
-    font-size: 36px;
+    font-size: 2em; 
     text-align: center;
 }
-
-
-
 
 .navigation {
     overflow: hidden;
