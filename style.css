@@ -34,7 +34,8 @@ p, .content {
     background-size: cover;
     background-position: center;
     position: relative; 
-    height: 70vh;
+    min-height: 70vh; /* Adjusted height */
+    overflow: hidden; /* Allow scrolling */
 }
 
 .home-page .header::before {
@@ -45,7 +46,7 @@ p, .content {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 0; 
+    z-index: -1; 
 }
 
 .header h1 {
