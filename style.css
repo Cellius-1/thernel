@@ -36,7 +36,8 @@ p, .content {
     background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
     background-size: cover;
     background-position: center;
-    position: relative; 
+    position: relative; /* Establishing a new stacking context */
+    height: 100vh; /* Set the height of the header to cover the entire viewport */
 }
 
 .home-page .header::before {
@@ -46,7 +47,7 @@ p, .content {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0; 
 }
 
@@ -55,6 +56,7 @@ p, .content {
     position: relative;
     z-index: 1;
 }
+
 
 
 
