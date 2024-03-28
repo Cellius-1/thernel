@@ -34,11 +34,10 @@ p, .content {
     background-size: cover;
     background-position: center;
     position: relative; 
-    min-height: 70vh; /* Adjusted height */
-    overflow: hidden; /* Allow scrolling */
+    min-height: 70vh; 
 }
 
-.home-page .header::before {
+.header::before {
     content: "";
     position: absolute;
     top: 0;
