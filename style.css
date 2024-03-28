@@ -6,12 +6,24 @@ body {
     background: #f4f4f4;
 }
 
+/* Titles and headings */
+h1, h2, h3, .header, .navigation a { 
+    font-family: 'Dela Gothic One', display; 
+}
+
+/* Paragraph text */
+p, .content { 
+    font-family: 'Rethink Sans', sans-serif; 
+}
+
+/* Header styling */
 .header {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
+/* Background image for the header */
 .header::before {
     content: "";
     position: absolute;
@@ -26,15 +38,17 @@ body {
     opacity: 0.5; 
 }
 
+/* Header text styling */
 .header h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 36px; 
+    font-size: 36px;
     text-align: center;
 }
 
+/* Navigation styling */
 .navigation {
     overflow: hidden;
     background-color: #333;
@@ -54,11 +68,13 @@ body {
     color: black;
 }
 
+/* Content styling */
 .content {
     padding: 20px;
     margin: 4px;
 }
 
+/* Footer styling */
 .footer {
     background-color: #333;
     color: white;
@@ -69,6 +85,7 @@ body {
     width: 100%;
 }
 
+/* Gallery styling */
 .gallery {
     display: flex;
     flex-wrap: wrap;
