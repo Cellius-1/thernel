@@ -54,7 +54,7 @@ p, .content {
 /* Navigation styling */
 .navigation {
     overflow: hidden;
-    background-color: #333;
+    background-color: #000;
 }
 
 .navigation a {
