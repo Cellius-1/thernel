@@ -16,14 +16,20 @@ p, .content {
     font-family: 'Rethink Sans', sans-serif; 
 }
 
-/* Header styling */
+
 .header {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+    background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
+    background-size: cover;
+    background-position: center;
+    height: 20vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; 
 }
 
-/* Background image for the header */
+
 .header::before {
     content: "";
     position: absolute;
@@ -31,22 +37,19 @@ p, .content {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-    opacity: 0.5; 
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
 }
 
 /* Header text styling */
 .header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    text-align: center;
+    font-size: 3em; /* Adjust as necessary */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative; /* Ensure the text is positioned over the overlay */
+    z-index: 1; 
 }
+
 
 /* Navigation styling */
 .navigation {
