@@ -168,11 +168,23 @@ p, .content {
     flex: 1;
     position: relative;
     z-index: 1; 
+    text-align: right; 
 }
 
-.text-box h2, .text-box p {
-    color: white;
-    padding: 20px;
+.text-box h2 {
+    font-size: 2em; 
+}
+
+.text-box p {
+    font-size: 1.2em; 
+    margin-top: 10px; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .text-box {
+        text-align: center; 
+    }
 }
 
 .image-box {
