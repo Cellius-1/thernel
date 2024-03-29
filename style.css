@@ -3,7 +3,7 @@ body {
     font-family: 'Rethink Sans', sans-serif; 
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #000000;
 }
 
 /* Titles and headings */
@@ -138,20 +138,20 @@ p, .content {
     align-items: center;
     margin: 20px;
     opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
+    animation: slideInSection 1s ease-in-out forwards;
 }
 
 .section .left-box {
     background-color: black;
     color: white;
     padding: 20px;
-    text-align: center;
-    width: 45%;
+    text-align: right; 
+    width: 50%;
     animation: slideInLeft 1s ease-in-out forwards;
 }
 
 .section .left-box h2 {
-    font-size: 2em;
+    font-size: 1.5em; 
     margin-bottom: 10px;
 }
 
@@ -163,7 +163,7 @@ p, .content {
     background-color: white;
     padding: 20px;
     text-align: center;
-    width: 45%;
+    width: 50%;
     animation: slideInRight 1s ease-in-out forwards;
 }
 
