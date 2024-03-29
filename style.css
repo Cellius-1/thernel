@@ -64,17 +64,16 @@ p, .content {
     padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
-    position: relative;
+    position: relative; 
     overflow: hidden; 
 }
-
 
 .navigation a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 1px; 
-    bottom: -5;
+    height: 2px; 
+    bottom: 5px; 
     left: 50%;
     background-color: white; 
     transition: all 0.3s ease; 
@@ -83,7 +82,7 @@ p, .content {
 
 .navigation a:hover::after {
     width: 100%; 
-    left: 0; 
+    left: 0;
     transform: translateX(0%); 
 }
 
