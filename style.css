@@ -30,7 +30,7 @@ p, .content {
 }
 
 
-.header::before {
+ .header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -41,13 +41,15 @@ p, .content {
     z-index: 0; 
 }
 
-/* Header text styling */
+        
 .header h1 {
     font-size: 3em; 
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     position: relative; 
     z-index: 1; 
+    animation: slideIn 1s ease-in-out forwards;
+           
 }
 
 
@@ -131,5 +133,16 @@ p, .content {
 @media (max-width: 600px) {
     .gallery div {
         flex-basis: 100%;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
