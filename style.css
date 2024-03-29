@@ -138,9 +138,24 @@ p, .content {
         flex-basis: 100%;
     }
 }
+
 .section {
     position: relative;
     overflow: hidden;
+}
+
+.background-container {
+    position: relative;
+}
+
+.background-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
 }
 
 .content {
@@ -148,20 +163,9 @@ p, .content {
 }
 
 .text-box {
-    flex: 1; 
+    flex: 1;
     position: relative;
-    z-index: 2; 
-}
-
-.text-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('https://cellus.github.io/thernel.github.io/images/backgroundgif.gif') no-repeat center center/cover; 
-    z-index: 1; 
+    z-index: 1;
 }
 
 .text-box h2, .text-box p {
@@ -170,9 +174,9 @@ p, .content {
 }
 
 .image-box {
-    flex: 1; 
+    flex: 1;
     position: relative;
-    z-index: 2; 
+    z-index: 1; 
 }
 
 .image-box img {
@@ -180,14 +184,10 @@ p, .content {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.7; 
-    z-index: 2; /
+    opacity: 0.7;
 }
 
-
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -196,6 +196,7 @@ p, .content {
         width: 100%;
     }
 }
+
 
 
 /* Animation*/
