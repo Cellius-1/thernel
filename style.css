@@ -16,7 +16,7 @@ p, .content {
     font-family: 'Rethink Sans', sans-serif; 
 }
 
-
+/* Header */
 .header {
     background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
     background-size: cover;
@@ -29,8 +29,7 @@ p, .content {
     position: relative; 
 }
 
-
- .header::before {
+.header::before {
     content: "";
     position: absolute;
     top: 0;
@@ -41,7 +40,6 @@ p, .content {
     z-index: 0; 
 }
 
-        
 .header h1 {
     font-size: 3em;
     color: white;
@@ -52,7 +50,7 @@ p, .content {
     margin: 0 auto; 
 }
 
-
+/* Navigation */
 .navigation {
     overflow: hidden;
     background-color: #000;
@@ -88,15 +86,13 @@ p, .content {
     top: 90%; 
 }
 
-
-
-/* Content styling */
+/* Content */
 .content {
     padding: 20px;
     margin: 4px;
 }
 
-/* Footer styling */
+/* Footer */
 .footer {
     background-color: #333;
     color: white;
@@ -107,7 +103,7 @@ p, .content {
     width: 100%;
 }
 
-/* Gallery styling */
+/* Gallery */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -129,16 +125,80 @@ p, .content {
     border-bottom: 1px solid #ddd;
 }
 
+/* Media for responsiveness */
 @media (max-width: 600px) {
     .gallery div {
         flex-basis: 100%;
     }
 }
 
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.section .left-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+.section .left-box h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.section .left-box p {
+    font-size: 1em;
+}
+
+.section .right-box {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 45%;
+    animation: slideInRight 1s ease-in-out forwards;
+}
+
+.section .right-box p {
+    font-size: 1em;
+}
+
+/* Animation*/
+
 @keyframes slideIn {
     0% {
         opacity: 0;
         transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
     }
     100% {
         opacity: 1;
