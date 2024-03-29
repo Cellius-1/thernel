@@ -9,11 +9,13 @@ body {
 /* Titles and headings */
 h1, h2, h3, .header, .navigation a { 
     font-family: 'Dela Gothic One', display; 
+    color: white;
 }
 
 /* Paragraph text */
 p, .content { 
-    font-family: 'Rethink Sans', sans-serif; 
+    font-family: 'Rethink Sans', sans-serif;
+    color: white;
 }
 
 /* Header */
