@@ -150,6 +150,7 @@ p, .content {
 .text-box {
     flex: 1; 
     position: relative;
+    z-index: 2; 
 }
 
 .text-box::before {
@@ -159,7 +160,8 @@ p, .content {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    background: url('https://cellus.github.io/thernel.github.io/images/backgroundgif.gif') no-repeat center center/cover; 
+    z-index: 1; 
 }
 
 .text-box h2, .text-box p {
@@ -168,8 +170,9 @@ p, .content {
 }
 
 .image-box {
-    flex: 1; /* Covering the rest */
+    flex: 1; 
     position: relative;
+    z-index: 2; 
 }
 
 .image-box img {
@@ -181,6 +184,7 @@ p, .content {
     top: 0;
     left: 0;
     opacity: 0.7; 
+    z-index: 2; /
 }
 
 
