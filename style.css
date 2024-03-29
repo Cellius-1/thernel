@@ -74,7 +74,7 @@ p, .content {
     position: absolute;
     width: 0;
     height: 1px; 
-    bottom: -5px;
+    bottom: -5;
     left: 50%;
     background-color: white; 
     transition: all 0.3s ease; 
