@@ -90,13 +90,61 @@ p, .content {
 
 /* Content */
 .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure the image and text align vertically in the center */
     padding: 20px;
     margin: 4px;
-    text-align: center;
 }
 
-.content h1 {
-    font-size: 2.5em;
+/* Text Box */
+.text-box {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding-right: 20px; /* Optional: Add padding for better spacing */
+}
+
+.text-box h2 {
+    font-size: 2em;
+}
+
+.text-box p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Image Box */
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.image-box img {
+    display: block;
+    max-width: 100%; /* Ensure the image does not overflow */
+    height: auto;
+    object-fit: cover;
+    opacity: 1;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .text-box, .image-box {
+        width: 100%;
+        padding: 0; /* Remove padding for smaller screens */
+    }
+    .text-box {
+        text-align: center;
+    }
 }
 
 /* Footer */
@@ -132,7 +180,6 @@ p, .content {
     border-bottom: 1px solid #ddd;
 }
 
-
 @media (max-width: 600px) {
     .gallery div {
         flex-basis: 100%;
@@ -159,64 +206,7 @@ p, .content {
     z-index: -1; 
 }
 
-.content {
-    display: flex;
-    position: relative;
-}
-
-.text-box {
-    flex: 1;
-    position: relative;
-    z-index: 1; 
-    text-align: right; 
-}
-
-.text-box h2 {
-    font-size: 2em; 
-}
-
-.text-box p {
-    font-size: 1.2em; 
-    margin-top: 10px; 
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .text-box {
-        text-align: center; 
-    }
-}
-
-.image-box {
-    flex: 1;
-    position: relative;
-    z-index: 1;
-}
-
-.image-box img {
-    display: block;
-    width: 50%; 
-    height: auto; 
-    object-fit: cover;
-    opacity: 1; 
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-    }
-    .text-box, .image-box {
-        width: 100%;
-    }
-}
-
-
-
-
-
 /* Animation*/
-
 @keyframes slideIn {
     0% {
         opacity: 0;
