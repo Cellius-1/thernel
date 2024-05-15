@@ -114,8 +114,8 @@ p, .content {
     left: 0; 
     margin: 0; 
     padding: 20px; 
-    color: white; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text-box p {
@@ -123,12 +123,11 @@ p, .content {
     margin-top: 10px;
 }
 
-
 /* Image Box */
 .image-box {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; 
     align-items: center;
     position: relative;
     z-index: 1;
@@ -136,10 +135,11 @@ p, .content {
 
 .image-box img {
     display: block;
-    max-width: 100%; /* Ensure the image does not overflow */
+    max-width: 100%; 
     height: auto;
     object-fit: cover;
     opacity: 1;
+    margin-left: 20px; 
 }
 
 /* Media queries for responsiveness */
@@ -149,10 +149,13 @@ p, .content {
     }
     .text-box, .image-box {
         width: 100%;
-        padding: 0; /* Remove padding for smaller screens */
+        padding: 0; 
     }
     .text-box {
         text-align: center;
+    }
+    .image-box {
+        justify-content: center;
     }
 }
 
