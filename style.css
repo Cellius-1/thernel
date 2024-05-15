@@ -92,7 +92,7 @@ p, .content {
 .content {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Ensure the image and text align vertically in the center */
+    align-items: center; 
     padding: 20px;
     margin: 4px;
 }
@@ -103,17 +103,26 @@ p, .content {
     position: relative;
     z-index: 1;
     text-align: left;
-    padding-right: 20px; /* Optional: Add padding for better spacing */
+    padding-right: 20px; 
 }
 
+
 .text-box h2 {
-    font-size: 2em;
+    font-size: 4em; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin: 0; 
+    padding: 20px; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .text-box p {
     font-size: 1.2em;
     margin-top: 10px;
 }
+
 
 /* Image Box */
 .image-box {
