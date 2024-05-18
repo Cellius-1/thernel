@@ -1,4 +1,3 @@
-/* styling for the website */
 body {
     font-family: 'Rethink Sans', sans-serif; 
     margin: 0;
@@ -6,19 +5,16 @@ body {
     background: #000000;
 }
 
-/* Titles and headings */
 h1, h2, h3, .header, .navigation a { 
     font-family: 'Dela Gothic One', display; 
     color: white;
 }
 
-/* Paragraph text */
 p, .content { 
     font-family: 'Rethink Sans', sans-serif;
     color: white;
 }
 
-/* Header */
 .header {
     background-image: url('https://cellius-1.github.io/thernel.github.io/images/pi.png');
     background-size: cover;
@@ -52,7 +48,6 @@ p, .content {
     margin: 0 auto; 
 }
 
-/* Navigation */
 .navigation {
     overflow: hidden;
     background-color: #000;
@@ -88,15 +83,13 @@ p, .content {
     top: 90%; 
 }
 
-
 .content {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 20px;
     margin: 4px;
 }
-
 
 .text-box {
     flex: 1;
@@ -106,13 +99,11 @@ p, .content {
     padding-right: 20px;
 }
 
-
 .text-box h2 {
-    font-size: 3em; 
-    position: relative; 
+    font-size: 3em;
     margin: 0;
-    padding: 20px; 
-    color: white; 
+    padding: 20px;
+    color: white;
 }
 
 .text-box p {
@@ -120,11 +111,10 @@ p, .content {
     margin-top: 10px;
 }
 
-/* Image Box */
 .image-box {
     flex: 1;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -132,14 +122,13 @@ p, .content {
 
 .image-box img {
     display: block;
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
     object-fit: cover;
     opacity: 1;
     margin-left: 20px;
 }
 
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -156,7 +145,6 @@ p, .content {
     }
 }
 
-
 .footer {
     background-color: #333;
     color: white;
@@ -166,7 +154,6 @@ p, .content {
     bottom: 0;
     width: 100%;
 }
-
 
 .gallery {
     display: flex;
@@ -209,13 +196,12 @@ p, .content {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
     opacity: 0.7; 
     z-index: -1; 
 }
 
-/* Animation*/
 @keyframes slideIn {
     0% {
         opacity: 0;
