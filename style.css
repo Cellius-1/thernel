@@ -102,7 +102,7 @@ p, .content {
 .text-box h2 {
     font-size: 3em;
     margin: 0;
-    padding: 20px;
+    padding: 20px 0; /* Adjust padding to ensure proper spacing */
     color: white;
 }
 
