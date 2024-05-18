@@ -1,8 +1,12 @@
 body {
-    font-family: 'Rethink Sans', sans-serif; 
+    font-family: 'Rethink Sans', sans-serif;
     margin: 0;
     padding: 0;
     background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, .header, .navigation a { 
@@ -24,7 +28,7 @@ p, .content {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
 
 .header::before {
@@ -34,8 +38,8 @@ p, .content {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 0; 
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
 .header h1 {
@@ -45,7 +49,7 @@ p, .content {
     position: relative;
     z-index: 1;
     animation: slideIn 1s ease-in-out forwards;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .navigation {
@@ -60,89 +64,60 @@ p, .content {
     padding: 14px 20px;
     text-decoration: none;
     font-size: 17px;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .navigation a::after {
     content: '';
     position: absolute;
-    width: 100%; 
-    height: 2px; 
-    background-color: white; 
-    bottom: 0; 
-    left: 0; 
-    transition: width 0.3s ease, top 0.3s ease; 
-    transform: scaleX(0); 
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease, top 0.3s ease;
+    transform: scaleX(0);
     transform-origin: bottom left;
-    top: 80%; 
+    top: 80%;
 }
 
 .navigation a:hover::after {
-    transform: scaleX(1); 
-    top: 90%; 
+    transform: scaleX(1);
+    top: 90%;
 }
 
-.content {
+.section {
+    flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+    background-color: #111;
+}
+
+.centered-text {
+    max-width: 800px;
     padding: 20px;
-    margin: 4px;
 }
 
-.text-box {
-    flex: 1;
-    position: relative;
-    z-index: 1;
+.centered-text .small-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
     text-align: left;
-    padding-right: 20px;
 }
 
-.text-box h2 {
+.centered-text .large-text {
     font-size: 3em;
-    margin: 0;
-    padding: 20px 0; /* Adjust padding to ensure proper spacing */
-    color: white;
+    margin: 20px 0;
 }
 
-.text-box p {
-    font-size: 1.2em;
-    margin-top: 10px;
+.centered-text .medium-text {
+    font-size: 1.5em;
 }
 
-.image-box {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.image-box img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    opacity: 1;
-    margin-left: 20px;
-}
-
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-    }
-    .text-box, .image-box {
-        width: 100%;
-        padding: 0;
-    }
-    .text-box {
-        text-align: center;
-    }
-    .image-box {
-        justify-content: center;
-    }
+.centered-text .highlight {
+    color: #FFD700;
 }
 
 .footer {
@@ -155,79 +130,10 @@ p, .content {
     width: 100%;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.gallery div {
-    flex-basis: 20%;
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-
-@media (max-width: 600px) {
-    .gallery div {
-        flex-basis: 100%;
-    }
-}
-
-.section {
-    position: relative;
-    overflow: hidden;
-}
-
-.background-container {
-    position: relative;
-}
-
-.background-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7; 
-    z-index: -1; 
-}
-
 @keyframes slideIn {
     0% {
         opacity: 0;
         transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100%);
     }
     100% {
         opacity: 1;
