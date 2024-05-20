@@ -102,7 +102,7 @@ p, .content {
 }
 
 .centered-text .small-text {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Victor Mono', monospace;
     font-size: 1.5em;
     text-align: left;
 }
